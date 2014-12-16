@@ -1,9 +1,38 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+/* Author     : Mihai Starniciuc
 */
-/*  Created on : Dec 16, 2014, 7:39:10 AM Author     : Mihai
-*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+.icon { display: inline-block; vertical-align: middle; }
+.icon.call-icon { width: 20px; height: 20px; background: url("../img/header-icon.png") no-repeat 0 0; }
+.icon.contact-icon { width: 25px; height: 20px; background: url("../img/header-icon.png") no-repeat -22px 0; }
+
+.btn-dv { background: #005ba9; /* Old browsers */ background: -moz-linear-gradient(top, #005ba9 0%, #5899d2 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #005ba9), color-stop(100%, #5899d2)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #005ba9 0%, #5899d2 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #005ba9 0%, #5899d2 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #005ba9 0%, #5899d2 100%); /* IE10+ */ background: linear-gradient(to bottom, #005ba9 0%, #5899d2 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005ba9', endColorstr='#5899d2',GradientType=0 ); /* IE6-9 */ border-radius: 10px; -moz-box-shadow: 0 3px 0px 0px #2a70ac; -webkit-box-shadow: 0 3px 0px 0px #2a70ac; box-shadow: 0 3px 0px 0px #2a70ac; color: #FFFFFF; padding: 10px 15px; font-family: "Open Sans", sans-serif; font-weight: bold; font-size: 12px; -moz-transition: all 0.35s; -o-transition: all 0.35s; -webkit-transition: all 0.35s; transition: all 0.35s; display: inline-block; width: 145px; margin: 10px; }
+.btn-dv:hover { background: #a10903; /* Old browsers */ background: -moz-linear-gradient(top, #a10903 0%, #e3000f 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a10903), color-stop(100%, #e3000f)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #a10903 0%, #e3000f 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #a10903 0%, #e3000f 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #a10903 0%, #e3000f 100%); /* IE10+ */ background: linear-gradient(to bottom, #a10903 0%, #e3000f 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10903', endColorstr='#e3000f',GradientType=0 ); /* IE6-9 */ -moz-box-shadow: 0 3px 0px 0px #950c00; -webkit-box-shadow: 0 3px 0px 0px #950c00; box-shadow: 0 3px 0px 0px #950c00; color: #FFFFFF; }
+
+body { font-family: "Open Sans", sans-serif; }
+
+header { height: 115px; background-color: #FFFFFF; -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
+header .logo { line-height: 115px; text-align: center; }
+header .logo a img { max-width: 100%; }
+header .number-call { height: 70px; }
+header .number-call a { color: #000000; font-size: 30px; line-height: 70px; }
+header .number-call a:hover { text-decoration: none; }
+header .call-block a { display: inline-block; color: #000000; font-size: 14px; margin-right: 20px; }
+header .call-block a span { border-bottom: 1px dotted #000000; -moz-transition: border, 0.35s; -o-transition: border, 0.35s; -webkit-transition: border, 0.35s; transition: border, 0.35s; }
+header .call-block a:hover { text-decoration: none; }
+header .call-block a:hover span { border-bottom: 0; }
+header .button-side { text-align: center; line-height: 115px; }
+
+main { padding-top: 115px; }
+main .slider-side { background: url("../img/slider-footer.png") no-repeat center bottom; background-size: cover; background-color: #FFFFFF; height: 800px; }
+main .slider-banner { margin: 25px 0; padding: 0 35px; position: relative; }
+main .slider-banner .banner-slider li img { width: 100%; }
+main .slider-banner .bx-controls-direction .bx-prev, main .slider-banner .bx-controls-direction .bx-next { position: absolute; top: 0px; width: 57px; text-indent: -9999px; background: url("../img/slider-tool.png") no-repeat 0 0; background-size: auto 455px; height: 420px; }
+main .slider-banner .bx-controls-direction .bx-prev { left: 0; }
+main .slider-banner .bx-controls-direction .bx-next { right: 0; background-position: -57px 0; }
+main .slider-banner .bx-pager { position: absolute; top: 370px; left: 160px; }
+main .slider-banner .bx-pager .bx-pager-item { display: inline-block; margin: 5px; }
+main .slider-banner .bx-pager .bx-pager-item a { width: 25px; height: 25px; background: url("../img/slider-tool.png") no-repeat -2px -372px; text-indent: -9999px; display: inline-block; }
+main .slider-banner .bx-pager .bx-pager-item a.active { background-position: -27px -372px; }
+main .slider-banner .bx-pager .bx-pager-item a:hover { background-position: -52px -372px; }
 
 /*# sourceMappingURL=main.css.map */

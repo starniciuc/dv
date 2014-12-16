@@ -1,0 +1,36 @@
+.btn-dv{
+    background: rgb(0,91,169); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,91,169,1) 0%, rgba(88,153,210,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,91,169,1)), color-stop(100%,rgba(88,153,210,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,91,169,1) 0%,rgba(88,153,210,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,91,169,1) 0%,rgba(88,153,210,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,91,169,1) 0%,rgba(88,153,210,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,91,169,1) 0%,rgba(88,153,210,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005ba9', endColorstr='#5899d2',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 10px;
+    @include box-shadow(0 3px 0px 0px #2a70ac);
+    color: $white;
+    padding: 10px 15px;
+    font-family: $font-open;
+    font-weight: bold;
+    font-size: 12px;
+    @include transition(all 0.35s);
+    display: inline-block;
+    width: 145px;
+    margin: 10px;
+    
+    &:hover{
+        background: rgb(161,9,3); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(161,9,3,1) 0%, rgba(227,0,15,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(161,9,3,1)), color-stop(100%,rgba(227,0,15,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(161,9,3,1) 0%,rgba(227,0,15,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(161,9,3,1) 0%,rgba(227,0,15,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(161,9,3,1) 0%,rgba(227,0,15,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(161,9,3,1) 0%,rgba(227,0,15,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10903', endColorstr='#e3000f',GradientType=0 ); /* IE6-9 */
+        
+        @include box-shadow(0 3px 0px 0px #950c00);
+        color: $white;
+    }    
+}

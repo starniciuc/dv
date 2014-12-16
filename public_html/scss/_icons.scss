@@ -1,0 +1,15 @@
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    
+    &.call-icon{
+        width: 20px;
+        height: 20px;
+        background: url("../img/header-icon.png") no-repeat 0 0;
+    }
+    &.contact-icon{
+        width: 25px;
+        height: 20px;
+        background: url("../img/header-icon.png") no-repeat -22px 0;
+    }
+}

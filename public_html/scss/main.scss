@@ -1,10 +1,139 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    Author     : Mihai Starniciuc
 */
-/* 
-    Created on : Dec 16, 2014, 7:39:10 AM
-    Author     : Mihai
-*/
+@import "compass";
+@import "fonts";
+@import "colors";
+@import "icons";
+@import "buttons";
 
+body{
+    font-family: $font-open;
+}
+
+header{
+    height: 115px;
+    background-color: $white;
+    @include box-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+
+    .logo{
+        line-height: 115px;
+        text-align: center;
+
+        a{    
+            img{
+                max-width: 100%;
+            }            
+        }
+    }
+
+    .number-call{
+        height: 70px;
+
+        a{
+            color: $black;
+            font-size: 30px;
+            line-height: 70px;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .call-block{
+        a{
+            display: inline-block;
+            color: $black;
+            font-size: 14px;
+            margin-right: 20px;
+
+            span{
+                border-bottom: 1px dotted $black;
+                @include transition(border, 0.35s);
+            }
+
+            &:hover{
+                text-decoration: none;
+
+                span{
+                    border-bottom: 0; 
+                }                
+            }
+        }
+    }
+
+    .button-side{
+        text-align: center;
+        line-height: 115px;
+    }
+}
+
+main{
+    padding-top: 115px;
+
+    .slider-side{
+        background: url("../img/slider-footer.png") no-repeat center bottom;
+        background-size: cover;
+        background-color: $white;
+        height: 800px;
+    }
+    .slider-banner{
+        margin: 25px 0;
+        padding:0 35px;
+        position: relative;
+
+        .banner-slider{
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .bx-controls-direction{
+            .bx-prev, .bx-next{
+                position: absolute;
+                top: 0px;
+                width: 57px;
+                text-indent: -9999px;
+                background: url("../img/slider-tool.png") no-repeat 0 0;
+                background-size: auto 455px;
+                height: 420px;
+            } 
+            .bx-prev{
+                left: 0;
+            }
+            .bx-next{
+                right: 0;
+                background-position: -57px 0;
+            }
+        }  
+        .bx-pager{
+            position: absolute;
+            top: 370px;
+            left: 160px;
+            .bx-pager-item{
+                display: inline-block;
+                margin: 5px;
+                
+                a{
+                    width: 25px;
+                    height: 25px;
+                    background: url("../img/slider-tool.png") no-repeat -2px -372px;
+                    text-indent: -9999px;
+                    display: inline-block;
+                    
+                    &.active{
+                        background-position: -27px -372px;
+                    }
+                    
+                    &:hover{
+                       background-position: -52px -372px; 
+                    }
+                }
+
+            }
+        }
+    }
+
+}
