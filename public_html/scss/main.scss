@@ -427,7 +427,7 @@ main{
         .man{
             padding-bottom: 550px;
             background: url("../img/man.png") no-repeat center bottom;
-            
+
         }
     }
 }
@@ -435,4 +435,54 @@ footer{
     background-color: $white;
     height: 115px;
     @include box-shadow(0 -3px 5px rgba(0, 0, 0, 0.15));
+	
+	.logo{
+        line-height: 115px;
+        text-align: center;
+
+        a{    
+            img{
+                max-width: 100%;
+            }            
+        }
+    }
+
+    .number-call{
+        height: 70px;
+
+        a{
+            color: $black;
+            font-size: 30px;
+            line-height: 70px;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .call-block{
+        a{
+            display: inline-block;
+            color: $black;
+            font-size: 14px;
+            margin-right: 20px;
+
+            span{
+                border-bottom: 1px dotted $black;
+                @include transition(border, 0.35s);
+            }
+
+            &:hover{
+                text-decoration: none;
+
+                span{
+                    border-bottom: 0; 
+                }                
+            }
+        }
+    }
+}
+.padding-top-20{
+	padding-top: 40px;
 }
