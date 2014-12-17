@@ -1,0 +1,79 @@
+
+@media screen and (max-width: 1200px) {
+    .btn-dv{
+        width: 120px;
+    }
+    main{
+        .slider-banner{
+
+            .bx-controls-direction{
+                .bx-prev, .bx-next{
+                    width: 47px;
+                    text-indent: -9999px;
+                    background-size: auto 372px;
+                    height: 345px;
+                } 
+                .bx-prev{
+                    left: 0;
+                }
+                .bx-next{
+                    right: 0;
+                    background-position: -47px 0;
+                }
+            }  
+            .bx-pager{
+                top: 300px;
+            }
+        }
+    }
+    main .steps .step{
+        height: 1150px;
+    }
+    main .steps .step .download-link {
+        left: 447px;
+        top: 174px;
+    }
+    main .steps .step .pay-link {
+        left: 578px;
+        top: 790px;
+    }
+}
+@media screen and (max-width: 992px) {
+     main{
+        .slider-banner{
+
+            .bx-controls-direction{
+                .bx-prev, .bx-next{
+                    display: none;
+                } 
+            }  
+            .bx-pager{
+                display: none;
+            }
+        }
+    }
+    main .slider-banner{
+        padding: 0;
+    }
+    main .nav-tabs li a,
+    main .nav-tabs li.active a,
+    main .nav-tabs li:hover a,
+    main .nav-tabs li.active:hover a
+    {
+        font-size: 14px;
+    }
+    main .steps .step{
+        height: 880px;
+    }
+    main .steps .step .download-link {
+        left: 336px;
+        top: 142px;
+    }
+    main .steps .step .pay-link {
+        left: 440px;
+        top: 610px;
+    }
+}
+@media(max-width:768px){
+
+}
